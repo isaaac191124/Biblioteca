@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros Prestados</title>
+    <link rel="stylesheet" href="./libros_prestados.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+        <h2>📚 Biblioteca</h2>
+        <a href="../registro/registros.html" class="link-menu"><button class="menu-item">👤 Usuarios</button></a>
+        <a href="../libros/añadir_libro.html" class="link-menu"><button class="menu-item">📖 Libros</button></a>
+        <a href="../categorias/categoria.html" class="link-menu"><button class="menu-item">🏷️ Categorías</button></a>
+        <a href="../editoriales/editorial.html" class="link-menu"><button class="menu-item">🏢 Editoriales</button></a>
+        <a href="../detalleprestamo/detalleprestamo.html" class="link-menu"><button class="menu-item">📋 Préstamos</button></a>
+        <div class="menu-item active">📗 Libros Prestados</div>
+    </aside>
+
+    <main class="content">
+        <div class="header">
+            <div>
+                <h1>Libros en Préstamo</h1>
+                <p>Historial de libros actualmente aprobados y en manos de los estudiantes</p>
+            </div>
+            <div class="header-acciones">
+                <a href="../home/pagina2.html" class="link-menu"><button class="boton">Inicio</button></a>
+                <button id="btnSalir" class="boton boton-peligro">Cerrar Sesión</button>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Libro Prestado</th>
+                        <th>Estudiante</th>
+                        <th>Fecha de Préstamo</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTablaActivos">
+                    <!-- Dinámico con JS -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
+
+</body>
+
+<!-- Rutas hacia la carpeta superior Script -->
+<script src="../../Script/libros_prestados.js"></script>
+<script src="../../Script/logout.js"></script>
+</html>
